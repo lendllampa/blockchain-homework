@@ -14,9 +14,17 @@
 2. Once download is complete, open the file, and follow the installation wizard.
 3. Your wallet is ready. You will use this later when making a transaction between two nodes/addresses.
 ---
+### Getting Ready to Run the Blockchain Network
+---
+1. Copy all the folders(**node1**,**node2**, and **2chainz**) into the **Blockchain-Tools** folder.
+2. If the nodes have not been initialized yet, initialize them now by inputting the following commands into gitbash while in the **Blockchain-Tools** directory one at a time.
+- ./geth --datadir node1 init 2chainz/2chainz.json
+- ./geth --datadir node2 init 2chainz/2chainz.json
+3. Now that they are initialized, you can run the network.
+---
 ### Running the Blockchain Network
 ---
-1. Open an instance of **Git Bash** and navigate to the **Blockchain-Tools** folder.
+1. Open a new instance of **Git Bash** and navigate to the **Blockchain-Tools** folder.
 2. Run the first node using the geth command and input the provided address of **node1**.
 - ./geth --datadir node1 --unlock "0x235E85066E3b50a9f19C6019C8EC11A1ec0Dc280" --mine --rpc --allow-insecure-unlock
 - When prompted for a password, input: **123**
